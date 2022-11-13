@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="bg-gray-500">
+<div id="simplemodal" class="hidden mt-4 fixed z-10 bg-black bg-opacity-50 h-screen ">
+    <div class="flex justify-center">
+        <div class="bg-white mx-12 w-4/6 shadow-md ">
+            <div class="bg-blue-500 pt-2 text-white">
+               <span class="text-white text-sm hover:text-black cursor-pointer flex justify-end mr-3" id="modalclose">&times;</span>
+            <h2 class="font-bold text-lg m-0">Form Header</h2>
+            </div>
+            <div class="p-5">
+                <form action="" class="w-screen h-2/6">
+                    <div class="w-7/12 m-2">
+                        <label for="" class="block">
+                            Full Name
+                    </label>
+                        <input type="text" class="w-7/12 block p-1 border-2 border-solid  rounded-md" id="form_name">
+                    </div>
+    
+                    <div class="w-7/12 m-2">
+                        <label for="" class="block">
+                            Email Address
+                    </label>
+                        <input type="text" class="w-7/12 block p-1 border-2 border-solid der-solid rounded-md" id="form_email">
+                    </div>
+    
+                    <div class="w-7/12 m-2">
+                        <label for="" class="block">
+                            Phone Number
+                    </label>
+                        <input type="text" class="w-7/12 block p-1 border-2 border-solid  rounded-md" id="form_number">
+                    </div>
+    
+                    <div class="w-7/12 m-2">
+                        <label for="" class="block">
+                            Age
+                    </label>
+                        <input type="text" class="w-7/12 block p-1 border-2 border-solid  rounded-md" id="form_age">
+                    </div>
+
+                    <button id="form_button" class="bg-blue-400 text-black-100 rounded-full py-2 px-2 text  font-bold cursor-pointer tracking-wider hover:shadow-inner transform hover:scale-110  hover:bg-opacity-50 transition ease-out duration-300 mt-7 ml-3"> Submit</button>
+                    
+                </form>    
+            </div>
+            <div class="bg-blue-500 p-2 text-white align-middle m-0"><h3>
+                Form Footer
+            </h3></div>
+        </div>
+     </div>
+ </div>
+<div>
+    <table class="shadow-2xl border-2 border-black w-screen mt-4 rounded-md">
+        <thead>
+            <tr>
+                <th class="border text-white font-bold capitalize bg-blue-600">Full Name</th>
+                <th class="border text-white font-bold capitalize bg-blue-600">E-mail Address</th>
+                <th class="border text-white font-bold capitalize bg-blue-600">Phone Number</th>
+                <th class="border text-white font-bold capitalize bg-blue-600">Age</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+    </table>
+    <div class="flex justify-center">
+        <div class="bg-blue-400 text-black-100 rounded-full py-2 px-2 text  font-bold cursor-pointer tracking-wider hover:shadow-inner transform hover:scale-110  hover:bg-opacity-50 transition ease-out duration-300 mt-7" id="add_student">Add Students</div>
+        <button id="modalopen" class="bg-blue-400 text-black-100 rounded-full py-2 px-2 text  font-bold cursor-pointer tracking-wider hover:shadow-inner transform hover:scale-110  hover:bg-opacity-50 transition ease-out duration-300 mt-7 ml-4"> Click For Form Input Method</button>
+    </div>
+</div>
+    <script src="student.js"></script>
+</body>
+</html>
